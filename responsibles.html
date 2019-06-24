@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>مدراء المناطق</title>
+    <style>
+
+    .sidenav {
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0px;
+    background-color: #111;
+    transition: 0.5s;
+    padding-top: 50px;
+    }
+
+    .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align:right;
+    }
+
+    .sidenav a:hover {
+    color: #f1f1f1;
+    }
+    </style>
+  </head>
+  <body>
+    <h1 class="text-center mt-3">لوحة الإدارة</h1>
+    <h5 class="text-center mx-4 my-4">
+        لوحة التحكم الخاصة بمعلومات المنتمين والمسؤولين
+    </h5>
+    <div id="mySidenav" class="sidenav">
+        <img src="img/logo.png" style="width:150px" alt="">
+        <a href="index.html">الرئيسية</a>
+        <a href="applications.html">طلبات الإنتماء</a>
+        <a href="responsibles.html">مدراء المناطق</a>
+    </div>
+
+    <div>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" style="right:200px;position: absolute;" data-toggle="modal" data-target="#exampleModal">
+            <i class="fa fa-plus"></i>
+        </button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header" style="display: inline">
+                  <h5 class="text-center" id="exampleModalLabel">إضافة مدير منطقة</h5>
+                </div>
+                <div class="modal-body float-right">
+                    <form>
+                        <div class="form-group">
+                          <label class="float-right">إسم المدير</label>
+                          <input type="text" class="form-control text-right" id="exampleInputEmail1" placeholder="يرجى إدخال إسم مدير المنطقة الجديد">
+                        </div>
+                        <div class="form-group">
+                          <label class="float-right">كلمة السر</label>
+                          <input type="password" class="form-control text-right" id="exampleInputPassword1" placeholder="يرجى إدخال كلمة السر الخاصة بالمدير">
+                        </div>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">إلغاء</button>
+                        <button type="button" class="btn btn-primary" style="" data-toggle="modal" data-target="#exampleModal2">
+                    حفظ المدير الجديد</button>
+                    <!-- Modal -->
+                    <div class="modal fade" style="margin-top:320px;style="display: inline"" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header" style="display: inline;">
+                              <h5 class="text-center" id="exampleModalLabel">تأكيد إضافة مدير المنطقة</h5>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label class="float-right">تأكيد كلمة السر</label>
+                                    <input type="password" class="form-control text-right" id="exampleInputPassword1" placeholder="يرجى إدخال كلمة السر الخاصة بك">
+                                  </div>
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">إلغاء</button>
+                              <button type="button" class="btn btn-primary">تأكيد الإضافة</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      </form>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    <div class="container" style="border:0.5px solid #efefef;padding:15px;margin-top:75px">
+        <table class="table table-striped" style="border: none !important;">
+            <thead>
+                <tr class="text-center">
+                <th scope="col">السيرة الذاتية</th>
+                <th scope="col">تغيير كلمة السر</th>
+                <th scope="col">المنطقة</th>
+                <th scope="col">المحافظة</th>
+                <th scope="col">الإسم</th>
+                <th scope="col">#</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center">
+                  <td><i class="fa fa-list-alt"></i></td>
+                  <td><a href="#" class="badge badge-danger">كلمة السر الجديدة</a></td>
+                  <td>منطقة1</td>
+                  <td>محافظة1</td>
+                  <td>علي أحمد</td>
+                  <th scope="row">1</th>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
